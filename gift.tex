@@ -1,0 +1,95 @@
+\documentclass[times,12pt]{article}
+\usepackage[inline]{trackchanges}
+\usepackage{array}
+\usepackage{titling}
+\usepackage[explicit]{titlesec}
+\usepackage[margin=1in]{geometry}
+\usepackage{paralist}
+\usepackage{graphicx}
+\usepackage{abbrevs}
+\usepackage{url}
+
+%% titling
+\posttitle{\vskip 0em}
+\setlength{\droptitle}{-2cm}
+
+%% titlesec
+\titleformat{\section}{\normalfont\bfseries}{\thesection}{1em}{\MakeUppercase{#1}}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesection}{1em}{{#1}}
+
+\title{\bfseries\large Mapping Items to Skills}
+\author{
+    \bfseries\small
+    Peng Xu and Michel C. Desmarais ?\\
+    \bfseries\small
+    Michel C. Desmarais and Peng Xu ?\\
+    \normalfont\small
+    Polytechnique Montreal\\
+}
+\date{\small\today}
+
+\begin{document}
+\maketitle
+
+The problem of mapping tasks to skills is gaining interest and it is reflected by the emergence of recent techniques that can use data for both defining this mapping, and for refining mappings given by experts.  We review the different approaches to modeling the tasks to skills mapping, and how such models are used in cognitive diagnosis and skills assessment. The algorithms to derive the mapping from data are described and evaluated with regards to their effectiveness in finding errors in given mappings, and with regards to determining the fit of given mapping to student performance data over a set of tasks. 
+
+\section*{Introduction}
+
+\note{
+  Issues and challenges:
+  \begin{itemize}
+  \item let's consider skills to include declarative and procedural knowledge, and possibly even psycho-motor, emotional, and relational skills, etc.
+  \item skill acquisition can be considered the end goal of every tutoring system
+  \item learning and assessment content often  organized around skills (assessment in particular)
+  \item therefore, it is utterly important to do a valid mapping
+  \item skills are latent and never directly observed and this constitutes a challenge
+  \item the challenge often goes unseen given unquestioned assumptions
+  \item relatively little work on content (?); most of the work focused on assessment
+  \item Challenges
+    \begin{itemize}
+    \item finding the number of skills
+    \item finding the order of skill acquisition
+    \item labeling skills
+    \item implicit prerequesite skills or skills that go unsuspected (discussion?)
+    \item hierarchy of skills and the coverage of a level (discussion?)
+    \item alternative skills (discussion?)
+    \end{itemize}
+  \end{itemize}
+}
+
+\section*{Related research}\label{relatedresearch}
+
+\note{
+  
+  Skills models
+  \begin{itemize}
+  \item Tatsuoka's seminal work
+  \item Q-matrices and their variants
+  \item Knowledge spaces and the no-skills approach
+  \item extention of Knowledge spaces to skills
+  \end{itemize}
+
+  Skills modeling from data
+  \begin{itemize}
+  \item data- vs. expert- driven modeling (we focus on data driven)
+  \item supervized vs. unsupervised; or named vs. unnamed
+  \item approaches to finding the number of skills
+  \item refining a Q-matrix
+  \end{itemize}
+
+  Modeling skills behind content?
+}
+
+
+\section*{Discussion}\label{discussion}
+
+
+\section{Recommendations and future research}\label{conclusions}
+
+
+\bibliographystyle{plain}
+\bibliography{simple}
+
+\end{document}
+
+This is never printed
